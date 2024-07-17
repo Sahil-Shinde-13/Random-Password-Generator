@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random-Password-Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>Generate a <br><span>Random Password</span></h1>
+            <div class="display">
+                <input type="text" id="password" placeholder="Password">
+                <img src="images/copy.png" onclick="copyPass()">
+            </div>
+            <button id="btn"><img src="images/generate.png">Generate Password</button>
+        </div>
+        <div class="options">
+            <div class="row">
+                <div class="left">
+                    <div class="length">
+                        Password Length
+                    </div>
+                    <div class="uppercase">
+                        Contains Uppercase
+                    </div>
+                    <div class="lowercase">
+                        Contains Lowercase
+                    </div>
+                    <div class="numbers">
+                        Contains Numbers
+                    </div>
+                    <div class="symbols">
+                        Contains Symbols
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="lengthbox">
+                        <input type="number" id="total-length" max="12" min="2" value="8">
+                    </div>
+                    <div class="upper-checked">
+                        <input type="checkbox" id="upper-case" checked>
+                    </div>
+                    <div class="lower-checked">
+                        <input type="checkbox" id="lower-case">
+                    </div>
+                    <div class="number">
+                        <input type="checkbox" id="numberss">
+                    </div>
+                    <div class="symbol">
+                        <input type="checkbox" id="symbolss">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
